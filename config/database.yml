@@ -81,7 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: Projet_chatons_production
-  username: Projet_chatons
-  password: <%= ENV["PROJET_CHATONS_DATABASE_PASSWORD"] %>
-  url: <%= ENV['DATABASE_URL'] %> 
+  url: <%= ENV['DATABASE_URL'] %>
