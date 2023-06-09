@@ -1,0 +1,86 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table id="mainTable" class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <thead class="text-xs uppercase nav-color powder">
+      <tr>
+        <th class="px-6 py-3 text-center">
+          Commandes passées
+        </th>
+        <th class="px-6 py-3 text-center">
+          Date de l'achat
+        </th>
+        <th class="px-6 py-3 text-center">
+          Prix total
+        </th>
+        <th class="px-6 py-3 text-center">
+          Voir détail de la commande
+        </th>
+      </tr>
+    </thead>
+    <tbody class="nav-item-color powder text-center">
+      <% @orders.sort.each do |order| %>
+        <tr>
+          <td class="px-6 py-3">
+            <%= order.id %>
+          </td>
+          <td class="px-6 py-3">
+            <%= order[:created_at] %>
+          </td>
+          <td class="px-6 py-3">
+            <% price = 0 %>
+            <% order.items.each do |item| %>
+              <% price += item.price %>
+            <% end %>
+            <%= price %>€
+          </td>
+          <td class="px-6 py-3">
+            <button onclick="toggleDetails(this)">Afficher détails</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <table class="details-table hidden w-fit text-center w-full">
+              <thead class="text-xs uppercase nav-item-color text-center powder">
+                <tr>
+                  <th class="px-6 py-3 text-center">
+                    Produits
+                  </th>
+                  <th class="px-6 py-3 text-center">
+                    Descriptions
+                  </th>
+                  <th class="px-6 py-3 text-center">
+                    Prix unitaire
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="nav-item-color powder text-center w-fit">
+                <% order.items.each do |item| %>
+                  <tr class="w-max">
+                    <td class=" pl-6 py-3 pb-3">
+                      <% if item.image.attached? %>
+                        <%= image_tag item.image, class: "h-16 w-16 rounded" %>
+                      <% end %>
+                    </td>
+                    <td class="px-6 py-3">
+                      <%= item.title %>
+                    </td>
+                    <td class="px-6 py-3">
+                      <%= item.price %>€
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function toggleDetails(button) {
+    var detailsTable = button.parentNode.parentNode.nextElementSibling.querySelector(".details-table");
+    detailsTable.classList.toggle("hidden");
+    button.innerText = detailsTable.classList.contains("hidden") ? "Afficher détails" : "Masquer détails";
+  }
+</script>

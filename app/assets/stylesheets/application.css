@@ -1,0 +1,157 @@
+@import url('https://fonts.cdnfonts.com/css/there-must-be');
+
+body{
+  background-color: #FFE0D0 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.border-darkwarning{
+  border: 2px solid #fabc85;
+  box-shadow: 0 0 10px #fcd4b2;
+}
+
+.bg-smoothlight{
+  background-color: #fac7ae;
+}
+
+.card{
+  transition: .3s;
+  font-family: 'Yatra One', cursive;
+  user-select: none;
+}
+
+.card:hover{
+  box-shadow: 0 0 30px #f7a55e;
+  transition: .3s;
+}
+
+.btn-custom-order{
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid rgb(61, 61, 61);
+  background: rgb(250, 190, 78);
+  transition : .3s;
+}
+
+.btn-custom-order:hover{
+  font-size: 20px;
+  transition: .3s;
+}
+
+.place-paw{
+  margin-top: -20;
+}
+
+footer {
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8bfa2;
+}
+
+/* NAV-BTN */
+
+.dot-btn{
+  background-color: #f7a55e !important;
+  border: 1px solid #f7a55e !important;
+  padding: 15px !important;
+  border-radius: 50px !important;
+}
+
+/* COLOR */
+
+.nav-color{
+  background-color: #604C62 !important;
+  border-bottom: 4px solid #f7a55e !important;
+}
+
+.nav-item-color{
+  background-color: #604C62 !important;
+}
+
+.nav-color{
+  background-color: #604C62 !important;
+}
+
+.powder{
+  color: #F7F6F2 !important;
+}
+
+.primary{
+  color: #F7A55E !important;
+}
+
+.bg-primary{
+  background-color: #F7A55E !important;
+}
+
+.secondary{
+  color: #ECD841 !important;
+}
+
+.bg-secondary{
+  background-color: #ECD841 !important;
+}
+
+.pic-item {
+  border-radius: 20px !important;
+}
+
+.ind-item {
+  border-radius: 40px !important;
+}
+
+.back-total {
+  background-color: #F7F6F2 !important;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.ind-pic{
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+
+.bard-btn{
+  background-color: #f7a55e !important;
+  color: #000000 !important;
+}
+
+.bard-btn:hover{
+  background-color: #f89641 !important;
+  color: #000000 !important;
+}
+
+.mrg-btn-cart{
+  margin-right: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.mrg-price-cart{
+  margin-bottom: 20px !important;
+  margin-left: 20px !important;
+}
+
+.bg-form{
+  background-color: #756177 !important;
+}
+
+#expandedTable {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.grey-button {
+  background-color: rgb(159, 218, 169) !important;
+  color: rgba(68, 62, 62, 0.603) !important;
+}
+#modal {
+  z-index: 9999; /* Valeur de z-index élevée pour afficher l'image au-dessus de la barre de navigation */
+}

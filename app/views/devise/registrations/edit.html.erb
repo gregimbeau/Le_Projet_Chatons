@@ -1,0 +1,57 @@
+<section class="nav-color dark:bg-gray-900">
+   <div class="flex flex-col items-center justify-center px-6 py-6 ">
+    <%= link_to root_path, class: "flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white" do %>
+      <%= image_tag("paw.png", alt: "logo", class: "w-8 h-8 mr-2") %>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white powder"><span class="primary">P</span>rojet <span class="primary">C</span>haton</span>     
+    <% end %>
+    <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+      <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+        <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+          Edit <%= resource_name.to_s.humanize %>
+        </h1>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, class: "space-y-4 md:space-y-6") do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+
+          <div>
+            <%= f.label :email, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" %>
+            <%= f.email_field :email, class: "nav-color border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", autofocus: true, autocomplete: "email" %>
+          </div>
+
+          <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+            <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+          <% end %>
+           <br>
+          <div>
+            <%= f.label :Mot_de_passe, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" %>
+            <%= f.password_field :password, class: "nav-color border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", autocomplete: "new-password" %>
+            <% if @minimum_password_length %>
+              <br />
+              <em><%= @minimum_password_length %> caractères minimum</em>
+            <% end %>
+          </div>
+
+          <div>
+            <%= f.label :confirmation_du_mot_de_passe, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" %>
+            <%= f.password_field :password_confirmation, class: "nav-color border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", autocomplete: "new-password" %>
+          </div>
+            <br>
+          <div>
+            <%= f.label :Mot_de_passe_actuel, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" %>
+            <%= f.password_field :current_password, class: "nav-color border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500", autocomplete: "current-password" %>
+          </div>
+            <br>
+          <%= f.submit "Update", class: "w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" %>
+
+        <% end %>
+<hr>
+        <h3 class="mt-4 text-gray-900 dark:text-white mx-auto mt-8 px-1 flex justify-center items-center">Fermer mon compte</h3>
+        <div class="text-gray-500 dark:text-gray-400 mx-auto mt-8 px-1 flex justify-center items-center"> Mécontent? 
+        </div>
+<div class= "mx-auto mt-1 px-0 flex justify-center items-center space-x-2">         
+  <%= button_to "Annuler mon compte", registration_path(resource_name), data: { confirm: "Etes vous certain?" }, method: :delete, class: "inline-block m-2 bg-red-400 hover:bg-red-500 text-white font-bold py-1 px-3 rounded" %>
+  <%= link_to "Retour", :back, class: "inline-block m-2 bg-gray-400 hover:nav-color0 text-white font-bold py-1 px-3 rounded" %>
+</div>
+      </div>
+    </div>
+  </div>
+</section>

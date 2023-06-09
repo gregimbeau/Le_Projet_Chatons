@@ -1,0 +1,121 @@
+<footer class="relative bg-blueGray pt-2.5">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left items-center justify-between">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl font-semibold text-blueGray-700">Le Projet des Chatons pour THP</h4>
+      </div>
+      <div class="w-full lg:w-6/12 px-4 flex justify-end">
+        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          <a href="https://github.com/TeamKiTu/Projet-chatons" target="_blank"><i class="fab fa-github"></i></a>
+        </button>
+      </div>
+    </div>
+
+    <hr class="my-2.5 border-blueGray-300">
+
+    <section class="page-section" id="team">
+      <div class="container">
+        <div class="grid grid-cols-5 gap-4">
+          <div>
+            <div class="team-member text-center">
+              <img src="<%= asset_path('1.jpg') %>" class="h-16 w-16 rounded-full justify-items-center mx-auto cursor-pointer" alt="..." onclick="openModal('<%= asset_path('1.jpg') %>', 'Specialiste des chatons aquatiques')">
+              <h4>Nicolas Vadelorge</h4>
+                          <p class="text-muted text-center">Founder</p>
+                          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                      </div>
+                        <div class="auto-cols-auto">
+                            <div class="team-member text-center">
+              <img src="<%= asset_path('2.jpg') %>" class="h-16 w-16 rounded-full justify-items-center mx-auto cursor-pointer" alt="..." onclick="openModal('<%= asset_path('2.jpg') %>', 'Specialiste des chatons voyageurs')">
+                    <h4 class="text-center">Emmanuel Beaugendre</h4>
+                    <p class="text-muted text-center">Founder</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="auto-cols-auto">
+                <div class="team-member text-center">
+              <img src="<%= asset_path('3.jpg') %>" class="h-16 w-16 rounded-full justify-items-center mx-auto cursor-pointer" alt="..." onclick="openModal('<%= asset_path('3.jpg') %>', 'Specialiste des chatons philosophes')">
+                    <h4 class="text-center">Nicolas Chiron</h4>
+                    <p class="text-muted text-center">Founder</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="auto-cols-auto">
+                <div class="team-member text-center">
+              <img src="<%= asset_path('4.jpg') %>" class="h-16 w-16 rounded-full justify-items-center mx-auto cursor-pointer" alt="..." onclick="openModal('<%= asset_path('4.jpg') %>', 'Specialiste des chatons gamers')">
+                    <h4 class="text-center">Vincent Deloffre</h4>
+                    <p class="text-muted text-center">Founder</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="auto-cols-auto">
+                <div class="team-member text-center">
+              <img src="<%= asset_path('5.jpg') %>" class="h-16 w-16 rounded-full justify-items-center mx-auto cursor-pointer" alt="..." onclick="openModal('<%= asset_path('5.jpg') %>', 'Specialiste des chatons randonneurs')">
+                    <h4 class="text-center">Guillaume Regimbeau</h4>
+                    <p class="text-muted text-center">Founder</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <hr class="my-4 border-blueGray-300">
+
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2023</span>
+          <a href="https://www.thehackingproject.org/" class="text-blueGray-500 hover:text-blueGray-800">| Le Projet des Chatons pour THP |</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="modal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+    <!-- Contenu de la modal -->
+    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+      <img id="modalImage" class="w-full" src="" alt="Modal Image">
+      <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+        <button id="closeModal" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+          Fermer
+        </button>
+      </div>
+      <p id="modalCaption"></p> <!-- Ajout de l'élément pour afficher la légende -->
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(imageUrl, caption) {
+    var modal = document.getElementById("modal");
+    var modalImage = document.getElementById("modalImage");
+    var modalCaption = document.getElementById("modalCaption");
+
+    modalImage.src = imageUrl;
+    modalCaption.textContent = caption;
+    modal.classList.remove("hidden");
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.classList.add("hidden");
+  }
+
+  document.getElementById("closeModal").addEventListener("click", closeModal);
+</script>
+
+</footer>
