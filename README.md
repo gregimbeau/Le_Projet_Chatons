@@ -11,7 +11,7 @@ Made with passion and care ❤️
 
 Creating our first website in team as [TeamKiTu](https://github.com/TeamKiTu)
 
-The new e-commerce website from THP : https://le-projet-chatons.herokuapp.com/
+The new e-commerce website from THP : https://le-projet-chatons.herokuapp.com/ || https://leprojetchaton.fly.dev/
 <br>
 Discover and buy all kitten's images on it ! Enjoy 😻
 
