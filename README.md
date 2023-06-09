@@ -7,7 +7,7 @@
 ![alt text](https://lh3.googleusercontent.com/erNBKisJ1SUcMbK4owjy-t3m62RamihN0MhXL28zrzBVlK_QFT8LqlA3rVkIC8AH2L8X4k_l9c0Fz70MUc3H3F0nlc7DfyMG9DXsNxQz)
 
 <br>
-Made with passion and care ❤️
+Made with passion and care ❤️ 
 
 Creating our first website in team as [TeamKiTu](https://github.com/TeamKiTu)
 
