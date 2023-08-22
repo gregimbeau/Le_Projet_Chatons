@@ -1,10 +1,5 @@
-   [![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
-   [![forthebadge](https://forthebadge.com/images/badges/no-ragrets.svg)](https://forthebadge.com)
-   [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-   
+    
    ### THP W10 - CRASH TEST - KITTENS PROJECT
-
-![alt text](https://lh3.googleusercontent.com/erNBKisJ1SUcMbK4owjy-t3m62RamihN0MhXL28zrzBVlK_QFT8LqlA3rVkIC8AH2L8X4k_l9c0Fz70MUc3H3F0nlc7DfyMG9DXsNxQz)
 
 <br>
 Made with passion and care ❤️ 
